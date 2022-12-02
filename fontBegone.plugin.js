@@ -9,7 +9,11 @@ module.exports = class FontPlugin {
 	start() {
 		var fontPluginStyleElem = document.createElement('style');
 		document.head.appendChild(fontPluginStyleElem);
-		fontPluginStyleElem.sheet.insertRule("* {font-family: sans-serif !important;}", 0);
+		fontPluginStyleElem.sheet.insertRule(``
+			* {
+				font-family: sans-serif !important;
+			}
+		``, 0);
 	}
 
 	stop() {
